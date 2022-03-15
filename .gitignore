@@ -5,6 +5,7 @@ __pycache__/
 
 # Specific to project
 data/
+src/parameters.csv
 
 # C extensions
 *.so
