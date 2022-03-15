@@ -4,8 +4,8 @@ __pycache__/
 *$py.class
 
 # Specific to project
-data/
-src/parameters.csv
+/data
+/src/parameters.csv
 
 # C extensions
 *.so
