@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 
 # Specific to project
-/data
+#/data #To not upload data
 /src/parameters.csv
 
 # C extensions
