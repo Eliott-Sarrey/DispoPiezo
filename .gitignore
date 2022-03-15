@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 
 # Specific to project
-./data
+data
 
 # C extensions
 *.so
