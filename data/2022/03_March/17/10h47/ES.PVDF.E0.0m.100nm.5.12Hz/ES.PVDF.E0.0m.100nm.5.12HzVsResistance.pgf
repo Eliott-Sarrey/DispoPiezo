@@ -1,0 +1,90 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{darkorange25512714}{RGB}{255,127,14}
+\definecolor{steelblue31119180}{RGB}{31,119,180}
+
+\begin{groupplot}[group style={group size=2 by 1}]
+\nextgroupplot[
+log basis x={10},
+tick align=outside,
+tick pos=left,
+title={Voltage Vs Load resistance},
+x grid style={darkgray176},
+xlabel={Rload [Ohms]},
+xmin=8959.58459840762, xmax=100451.085663051,
+xmode=log,
+xtick style={color=black},
+y grid style={darkgray176},
+ylabel={Mean voltage [V]},
+ymin=0.00323681640625, ymax=0.0179878540039063,
+ytick style={color=black}
+]
+\addplot [semithick, darkorange25512714, mark=x, mark size=3, mark options={solid}, only marks]
+table {%
+10000 0.00390731811523438
+20000 0.00451751708984375
+30000 0.00670181274414063
+40000 0.00844696044921875
+50000 0.0101986694335938
+60000 0.0119390869140625
+70000 0.0136187744140625
+80000 0.0155398559570313
+90000 0.0173173522949219
+};
+\addplot [semithick, steelblue31119180]
+table {%
+10000 0.00390731811523438
+20000 0.00451751708984375
+30000 0.00670181274414063
+40000 0.00844696044921875
+50000 0.0101986694335938
+60000 0.0119390869140625
+70000 0.0136187744140625
+80000 0.0155398559570313
+90000 0.0173173522949219
+};
+
+\nextgroupplot[
+log basis x={10},
+tick align=outside,
+tick pos=left,
+title={Power Vs Load resistance},
+x grid style={darkgray176},
+xlabel={Rload [Ohms]},
+xmin=8959.58459840762, xmax=100451.085663051,
+xmode=log,
+xtick style={color=black},
+y grid style={darkgray176},
+ylabel={Mean power [W]},
+ymin=1.34388800880243e-09, ymax=4.47241108191217e-09,
+ytick style={color=black}
+]
+\addplot [semithick, darkorange25512714, mark=x, mark size=3, mark options={solid}, only marks]
+table {%
+10000 2.29610370261802e-09
+20000 1.48609360303469e-09
+30000 2.01921725900152e-09
+40000 2.39469263512553e-09
+50000 2.74198007250793e-09
+60000 3.15231155652614e-09
+70000 3.48902486381891e-09
+80000 3.94696070327441e-09
+90000 4.33020548767991e-09
+};
+\addplot [semithick, steelblue31119180]
+table {%
+10000 2.29610370261802e-09
+20000 1.48609360303469e-09
+30000 2.01921725900152e-09
+40000 2.39469263512553e-09
+50000 2.74198007250793e-09
+60000 3.15231155652614e-09
+70000 3.48902486381891e-09
+80000 3.94696070327441e-09
+90000 4.33020548767991e-09
+};
+\end{groupplot}
+
+\end{tikzpicture}

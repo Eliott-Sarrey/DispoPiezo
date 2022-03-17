@@ -1,0 +1,57 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{steelblue31119180}{RGB}{31,119,180}
+
+\begin{groupplot}[group style={group size=2 by 1}]
+\nextgroupplot[
+log basis x={10},
+tick align=outside,
+tick pos=left,
+title={Voltage Vs Load resistance},
+x grid style={darkgray176},
+xlabel={Rload [Ohms]},
+xmin=8763.82301087964, xmax=159747.635051735,
+xmode=log,
+xtick style={color=black},
+y grid style={darkgray176},
+ylabel={Mean voltage [V]},
+ymin=0.0075643539428711, ymax=0.0430177688598633,
+ytick style={color=black}
+]
+\addplot [semithick, steelblue31119180]
+table {%
+10000 0.00917587280273438
+50000 0.0175100708007813
+100000 0.0311529541015625
+120000 0.0363505554199219
+140000 0.04140625
+};
+
+\nextgroupplot[
+log basis x={10},
+tick align=outside,
+tick pos=left,
+title={Power Vs Load resistance},
+x grid style={darkgray176},
+xlabel={Rload [Ohms]},
+xmin=8763.82301087964, xmax=159747.635051735,
+xmode=log,
+xtick style={color=black},
+y grid style={darkgray176},
+ylabel={Mean power [W]},
+ymin=8.16437315619158e-09, ymax=1.57827613131813e-08,
+ytick style={color=black}
+]
+\addplot [semithick, steelblue31119180]
+table {%
+10000 1.00477089131907e-08
+50000 8.51066352696384e-09
+100000 1.23068837670998e-08
+120000 1.38881320733867e-08
+140000 1.5436470942409e-08
+};
+\end{groupplot}
+
+\end{tikzpicture}
