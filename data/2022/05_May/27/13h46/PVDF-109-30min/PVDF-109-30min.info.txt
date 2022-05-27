@@ -1,0 +1,4 @@
+# Pressure average [mBar]:  42.5 ±   2.8
+# Pressure variance [mBar]: 0.004426341735253763
+# Excitation frequency [Hz] : 22.35310611609595
+# Max voltage [V] : 0.2156988525390625

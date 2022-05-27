@@ -1,0 +1,3 @@
+# Pressure average [mBar]:  47.8 ±   2.1
+# Pressure variance [mBar]: 0.006336434327846365
+# Excitation frequency [Hz] : 13.03931190105597

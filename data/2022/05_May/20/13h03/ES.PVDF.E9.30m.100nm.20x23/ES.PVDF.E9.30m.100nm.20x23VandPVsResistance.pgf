@@ -1,0 +1,78 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{darkorange25512714}{RGB}{255,127,14}
+\definecolor{steelblue31119180}{RGB}{31,119,180}
+
+\begin{groupplot}[group style={group size=2 by 1}]
+\nextgroupplot[
+log basis x={10},
+tick align=outside,
+tick pos=left,
+title={Voltage Vs Load resistance},
+x grid style={darkgray176},
+xlabel={Rload [Ohms]},
+xmin=7262.60522026317, xmax=8261498.20626293,
+xmode=log,
+xtick style={color=black},
+y grid style={darkgray176},
+ylabel={Mean voltage [V]},
+ymin=0.0116487045288086, ymax=0.023267219543457,
+ytick style={color=black}
+]
+\addplot [semithick, darkorange25512714, mark=x, mark size=3, mark options={solid}, only marks]
+table {%
+10000 0.0122189331054688
+20000 0.0121768188476563
+30000 0.0144973754882813
+40000 0.0174588012695313
+50000 0.0198574829101563
+6000000 0.0227391052246094
+};
+\addplot [semithick, steelblue31119180]
+table {%
+10000 0.0122189331054688
+20000 0.0121768188476563
+30000 0.0144973754882813
+40000 0.0174588012695313
+50000 0.0198574829101563
+6000000 0.0227391052246094
+};
+
+\nextgroupplot[
+log basis x={10},
+tick align=outside,
+tick pos=left,
+title={Power Vs Load resistance},
+x grid style={darkgray176},
+xlabel={Rload [Ohms]},
+xmin=7262.60522026317, xmax=8261498.20626293,
+xmode=log,
+xtick style={color=black},
+y grid style={darkgray176},
+ylabel={Mean power [W]},
+ymin=8.15259343101865e-11, ymax=5.61984157562256e-10,
+ytick style={color=black}
+]
+\addplot [semithick, darkorange25512714, mark=x, mark size=3, mark options={solid}, only marks]
+table {%
+10000 1.7056153552367e-10
+20000 2.10397757735907e-10
+30000 3.05819465118705e-10
+40000 4.36730751624474e-10
+50000 5.40145147414435e-10
+6000000 1.03364944458008e-10
+};
+\addplot [semithick, steelblue31119180]
+table {%
+10000 1.7056153552367e-10
+20000 2.10397757735907e-10
+30000 3.05819465118705e-10
+40000 4.36730751624474e-10
+50000 5.40145147414435e-10
+6000000 1.03364944458008e-10
+};
+\end{groupplot}
+
+\end{tikzpicture}
